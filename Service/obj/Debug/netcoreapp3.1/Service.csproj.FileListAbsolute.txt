@@ -1,0 +1,14 @@
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cerdem\RiderProjects\basket-service\Service\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Users\cerdem\RiderProjects\basket-service\Service\obj\Debug\netcoreapp3.1\Service.pdb

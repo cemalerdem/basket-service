@@ -1,0 +1,1 @@
+C:\Users\cerdem\RiderProjects\basket-service\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

@@ -1,0 +1,36 @@
+services:
+  api:
+    build:
+      context: C:\Users\cerdem\RiderProjects\basket-service
+      dockerfile: Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Api
+      target: base
+    container_name: Api_1
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: api:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/netcoreapp3.1/Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\cerdem\RiderProjects\basket-service\Api:/app:rw
+    - C:\Users\cerdem\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\cerdem\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\cerdem\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\cerdem\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\cerdem\RiderProjects\basket-service:/src:rw
+version: '3.4'

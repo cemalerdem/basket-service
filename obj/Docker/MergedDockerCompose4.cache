@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: C:\Users\cerdem\RiderProjects\basket-service
+      dockerfile: Api/Dockerfile
+    depends_on:
+    - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: api
+    ports:
+    - published: 5100
+      target: 80
+    - target: 80
+  db:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Your_password123
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+    - published: 1433
+      target: 1433
+version: '3.4'
